@@ -1,0 +1,3298 @@
+{
+  "_format": "simarena/asset@1.0",
+  "name": "bandit_rp1_physics_v1",
+  "entities": [
+    {
+      "name": "base_link",
+      "joint": {
+        "type": "free"
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "static",
+        "mass": 3.295,
+        "centerOfMass": [
+          -0.03786057,
+          -0.00301243,
+          -0.04479345
+        ],
+        "inertia": [
+          0.006994563490719776,
+          0.008139525491245986,
+          0.009623521018034247
+        ],
+        "inertiaQuat": [
+          0.5254398939535678,
+          -0.4730378485825688,
+          -0.47437929752507163,
+          0.524511576354667
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "base_link_visual_1",
+      "relation": {
+        "parent": "base_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_base_link_stl",
+          "group": "visual",
+          "material": "mat_base_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_hip_pitch_link",
+      "transform": {
+        "pos": [
+          -0.03843,
+          0.062987,
+          -0.051639
+        ]
+      },
+      "relation": {
+        "parent": "base_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "range": [
+          -2.86,
+          2.86
+        ],
+        "armature": 0.029085325,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -141.7,
+            141.7
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 1.83930168,
+        "centerOfMass": [
+          -0.00326988,
+          0.05886633,
+          -0.0576517
+        ],
+        "inertia": [
+          0.0023612316946896948,
+          0.003041820314425446,
+          0.0033835179908848594
+        ],
+        "inertiaQuat": [
+          0.6839888393595698,
+          0.191225536292781,
+          -0.6789243414866484,
+          -0.18615531267736604
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.0497,
+          "height": 0.060132004789462984,
+          "pos": [
+            -0.01122,
+            0.05913,
+            -0.04004
+          ],
+          "quat": [
+            0.9899212517682475,
+            0.14161890868660798,
+            0.0,
+            -0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_hip_pitch_link_visual_1",
+      "relation": {
+        "parent": "left_hip_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_hip_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_left_hip_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_hip_roll_link",
+      "transform": {
+        "pos": [
+          0.031915,
+          0.061254,
+          -0.060672
+        ]
+      },
+      "relation": {
+        "parent": "left_hip_pitch_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "range": [
+          -0.74,
+          2.6
+        ],
+        "armature": 0.029085325,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -141.7,
+            141.7
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 1.473,
+        "centerOfMass": [
+          -0.00518991,
+          -3.499e-05,
+          -0.08084106
+        ],
+        "inertia": [
+          0.0017132118801212104,
+          0.003828133823700457,
+          0.003973714296178335
+        ],
+        "inertiaQuat": [
+          0.5896656811575745,
+          -0.007903967479340773,
+          0.8075439812084163,
+          0.010228889339524972
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.05622,
+          "height": 0.0692,
+          "pos": [
+            -0.0127,
+            0.0,
+            -0.04118
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_hip_roll_link_visual_1",
+      "relation": {
+        "parent": "left_hip_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_hip_roll_link_stl",
+          "group": "visual",
+          "material": "mat_left_hip_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_hip_yaw_link",
+      "transform": {
+        "pos": [
+          -0.012698,
+          0.0,
+          -0.129
+        ]
+      },
+      "relation": {
+        "parent": "left_hip_roll_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "range": [
+          -2.76,
+          2.76
+        ],
+        "armature": 0.029085325,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -141.7,
+            141.7
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 2.483,
+        "centerOfMass": [
+          -0.0195927,
+          -0.000232,
+          -0.12376414
+        ],
+        "inertia": [
+          0.003396897763754585,
+          0.011756307854480466,
+          0.012257914381764953
+        ],
+        "inertiaQuat": [
+          -0.5520061096250662,
+          0.5622406897982128,
+          0.4299775120286311,
+          0.44078793180110715
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.05622,
+          "height": 0.11041186258731442,
+          "pos": [
+            -0.015235,
+            0.0,
+            -0.109285
+          ],
+          "quat": [
+            0.990257335199515,
+            0.0,
+            0.13924945272264272,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_hip_yaw_link_visual_1",
+      "relation": {
+        "parent": "left_hip_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_hip_yaw_link_stl",
+          "group": "visual",
+          "material": "mat_left_hip_yaw_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_knee_link",
+      "transform": {
+        "pos": [
+          -0.033201,
+          -0.030809,
+          -0.16509
+        ]
+      },
+      "relation": {
+        "parent": "left_hip_yaw_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "range": [
+          -2.83,
+          0.06
+        ],
+        "armature": 0.029085325,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -141.7,
+            141.7
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 2.557,
+        "centerOfMass": [
+          0.03105182,
+          0.03046366,
+          -0.1336225
+        ],
+        "inertia": [
+          0.002910146520643437,
+          0.018158267833588343,
+          0.018326105645768222
+        ],
+        "inertiaQuat": [
+          0.6027183099533895,
+          0.36089095565286566,
+          0.6111545895875824,
+          -0.36466206904602105
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.052,
+          "height": 0.14415616532080755,
+          "pos": [
+            0.018000000000000002,
+            0.03081,
+            -0.0745
+          ],
+          "quat": [
+            0.9945114199909509,
+            0.0,
+            -0.10462808183075072,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.0405,
+          "height": 0.09319334740205443,
+          "pos": [
+            0.03,
+            0.03081,
+            -0.2315
+          ],
+          "quat": [
+            0.9994811926615873,
+            0.0,
+            0.032207848667225564,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_knee_link_visual_1",
+      "relation": {
+        "parent": "left_knee_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_knee_link_stl",
+          "group": "visual",
+          "material": "mat_left_knee_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_ankle_pitch_link",
+      "transform": {
+        "pos": [
+          0.03131,
+          0.030811,
+          -0.30533
+        ]
+      },
+      "relation": {
+        "parent": "left_knee_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "range": [
+          -0.78,
+          0.61
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -70.6,
+            70.6
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.16605731,
+        "centerOfMass": [
+          0.00126332,
+          0.0,
+          -0.01319163
+        ],
+        "inertia": [
+          2.3892602296244672e-05,
+          3.6417397703755325e-05,
+          4.2919999999999975e-05
+        ],
+        "inertiaQuat": [
+          0.5289166831575071,
+          0.5289166831575064,
+          0.4693049565875705,
+          -0.4693049565875708
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.0215,
+          "height": 0.011873436739209082,
+          "pos": [
+            0.00407,
+            0.0,
+            -0.008324999999999999
+          ],
+          "quat": [
+            0.5621172248706766,
+            -0.0,
+            0.8270575708520472,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_ankle_pitch_link_visual_1",
+      "relation": {
+        "parent": "left_ankle_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_ankle_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_left_ankle_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_ankle_roll_link",
+      "transform": {
+        "pos": [
+          0.013067,
+          0.0,
+          -0.018922
+        ]
+      },
+      "relation": {
+        "parent": "left_ankle_pitch_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.999993677858222,
+          0.0,
+          0.00355587451777954
+        ],
+        "range": [
+          -0.26,
+          0.26
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -70.6,
+            70.6
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.643,
+        "centerOfMass": [
+          0.008711,
+          -2e-06,
+          -0.021633
+        ],
+        "inertia": [
+          0.0003518318434458268,
+          0.0019200000000000003,
+          0.0020111681565541735
+        ],
+        "inertiaQuat": [
+          0.0,
+          0.9993081546733222,
+          0.0,
+          -0.037191558227636264
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.06,
+          "pos": [
+            0.06,
+            -0.03,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.175,
+          "pos": [
+            0.0225,
+            -0.02,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.2,
+          "pos": [
+            0.0225,
+            -0.01,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.21000000000000002,
+          "pos": [
+            0.0225,
+            0.0,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.2,
+          "pos": [
+            0.0225,
+            0.01,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.175,
+          "pos": [
+            0.0225,
+            0.02,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.06,
+          "pos": [
+            0.06,
+            0.03,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_ankle_roll_link_visual_1",
+      "relation": {
+        "parent": "left_ankle_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_ankle_roll_link_stl",
+          "group": "visual",
+          "material": "mat_left_ankle_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_hip_pitch_link",
+      "transform": {
+        "pos": [
+          -0.03843,
+          -0.069013,
+          -0.051639
+        ]
+      },
+      "relation": {
+        "parent": "base_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "range": [
+          -2.86,
+          2.86
+        ],
+        "armature": 0.029085325,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -141.7,
+            141.7
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 1.84174869,
+        "centerOfMass": [
+          -0.00326831,
+          -0.05867998,
+          -0.05764945
+        ],
+        "inertia": [
+          0.0023662320116552395,
+          0.00304399453454867,
+          0.0033905834537960883
+        ],
+        "inertiaQuat": [
+          0.6875321375742519,
+          -0.17643268674912319,
+          -0.6791613348742048,
+          0.18684471643842088
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.0497,
+          "height": 0.060132004789462984,
+          "pos": [
+            -0.01122,
+            -0.05913,
+            -0.04004
+          ],
+          "quat": [
+            0.9899212517682475,
+            -0.14161890868660798,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_hip_pitch_link_visual_1",
+      "relation": {
+        "parent": "right_hip_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_hip_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_right_hip_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_hip_roll_link",
+      "transform": {
+        "pos": [
+          0.031915,
+          -0.061254,
+          -0.060672
+        ]
+      },
+      "relation": {
+        "parent": "right_hip_pitch_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "range": [
+          -2.6,
+          0.74
+        ],
+        "armature": 0.029085325,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -141.7,
+            141.7
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 1.473,
+        "centerOfMass": [
+          -0.00518991,
+          -3.499e-05,
+          -0.08084106
+        ],
+        "inertia": [
+          0.0017132118801212104,
+          0.003828133823700457,
+          0.003973714296178335
+        ],
+        "inertiaQuat": [
+          0.5896656811575745,
+          -0.007903967479340773,
+          0.8075439812084163,
+          0.010228889339524972
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.05622,
+          "height": 0.0692,
+          "pos": [
+            -0.0127,
+            0.0,
+            -0.04118
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_hip_roll_link_visual_1",
+      "relation": {
+        "parent": "right_hip_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_hip_roll_link_stl",
+          "group": "visual",
+          "material": "mat_right_hip_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_hip_yaw_link",
+      "transform": {
+        "pos": [
+          -0.012698,
+          0.0,
+          -0.129
+        ]
+      },
+      "relation": {
+        "parent": "right_hip_roll_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "range": [
+          -2.76,
+          2.76
+        ],
+        "armature": 0.029085325,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -141.7,
+            141.7
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 2.483,
+        "centerOfMass": [
+          -0.01958069,
+          0.00023065,
+          -0.12376565
+        ],
+        "inertia": [
+          0.003348517308972062,
+          0.0118068676905306,
+          0.012259395000497334
+        ],
+        "inertiaQuat": [
+          0.5621577752644452,
+          -0.5507191895151848,
+          -0.4421227238903469,
+          -0.43036555046756186
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.05622,
+          "height": 0.11041186258731442,
+          "pos": [
+            -0.015235,
+            0.0,
+            -0.109285
+          ],
+          "quat": [
+            0.990257335199515,
+            0.0,
+            0.13924945272264272,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_hip_yaw_link_visual_1",
+      "relation": {
+        "parent": "right_hip_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_hip_yaw_link_stl",
+          "group": "visual",
+          "material": "mat_right_hip_yaw_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_knee_link",
+      "transform": {
+        "pos": [
+          -0.033201,
+          0.030808967,
+          -0.165090023
+        ]
+      },
+      "relation": {
+        "parent": "right_hip_yaw_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "range": [
+          -0.06,
+          2.83
+        ],
+        "armature": 0.029085325,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -141.7,
+            141.7
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 2.557,
+        "centerOfMass": [
+          0.0311529,
+          -0.03066848,
+          -0.13404559
+        ],
+        "inertia": [
+          0.0028787959125644164,
+          0.018002185768012515,
+          0.01816162831942307
+        ],
+        "inertiaQuat": [
+          0.5927953672143184,
+          -0.3753832879203887,
+          0.6012699712988873,
+          0.3823028398711618
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.052,
+          "height": 0.14415616532080755,
+          "pos": [
+            0.018000000000000002,
+            -0.03081,
+            -0.0745
+          ],
+          "quat": [
+            0.9945114199909509,
+            0.0,
+            -0.10462808183075072,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.0405,
+          "height": 0.09319334740205443,
+          "pos": [
+            0.03,
+            -0.03081,
+            -0.2315
+          ],
+          "quat": [
+            0.9994811926615873,
+            0.0,
+            0.032207848667225564,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_knee_link_visual_1",
+      "relation": {
+        "parent": "right_knee_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_knee_link_stl",
+          "group": "visual",
+          "material": "mat_right_knee_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_ankle_pitch_link",
+      "transform": {
+        "pos": [
+          0.03131,
+          -0.030809,
+          -0.30533
+        ]
+      },
+      "relation": {
+        "parent": "right_knee_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "range": [
+          -0.78,
+          0.61
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -70.6,
+            70.6
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.16605731,
+        "centerOfMass": [
+          0.00126328,
+          0.0,
+          -0.01319163
+        ],
+        "inertia": [
+          2.3892602296244672e-05,
+          3.6417397703755325e-05,
+          4.2919999999999975e-05
+        ],
+        "inertiaQuat": [
+          0.5289166831575071,
+          0.5289166831575064,
+          0.4693049565875705,
+          -0.4693049565875708
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.0215,
+          "height": 0.011873436739209082,
+          "pos": [
+            0.00407,
+            0.0,
+            -0.008324999999999999
+          ],
+          "quat": [
+            0.5621172248706766,
+            -0.0,
+            0.8270575708520472,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_ankle_pitch_link_visual_1",
+      "relation": {
+        "parent": "right_ankle_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_ankle_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_right_ankle_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_ankle_roll_link",
+      "transform": {
+        "pos": [
+          0.013067,
+          0.0,
+          -0.018922
+        ]
+      },
+      "relation": {
+        "parent": "right_ankle_pitch_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.999993677858222,
+          0.0,
+          0.00355587451777984
+        ],
+        "range": [
+          -0.26,
+          0.26
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -70.6,
+            70.6
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.643,
+        "centerOfMass": [
+          0.008711,
+          -2e-06,
+          -0.021633
+        ],
+        "inertia": [
+          0.0003518318434458268,
+          0.0019200000000000003,
+          0.0020111681565541735
+        ],
+        "inertiaQuat": [
+          0.0,
+          0.9993081546733222,
+          0.0,
+          -0.037191558227636264
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.06,
+          "pos": [
+            0.06,
+            -0.03,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.175,
+          "pos": [
+            0.0225,
+            -0.02,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.2,
+          "pos": [
+            0.0225,
+            -0.01,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.21000000000000002,
+          "pos": [
+            0.0225,
+            0.0,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.2,
+          "pos": [
+            0.0225,
+            0.01,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.175,
+          "pos": [
+            0.0225,
+            0.02,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.01,
+          "height": 0.06,
+          "pos": [
+            0.06,
+            0.03,
+            -0.035
+          ],
+          "quat": [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865475,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_ankle_roll_link_visual_1",
+      "relation": {
+        "parent": "right_ankle_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_ankle_roll_link_stl",
+          "group": "visual",
+          "material": "mat_right_ankle_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "waist_roll_link",
+      "transform": {
+        "pos": [
+          -0.007579949,
+          -0.003012699,
+          0.05298383
+        ]
+      },
+      "relation": {
+        "parent": "base_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "range": [
+          -0.7,
+          0.7
+        ],
+        "armature": 0.029085325,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -141.7,
+            141.7
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 1.53201882,
+        "centerOfMass": [
+          -0.03058205,
+          4.115e-05,
+          -0.00029517
+        ],
+        "inertia": [
+          0.0016426000426912391,
+          0.0016625416159485795,
+          0.002212598341360181
+        ],
+        "inertiaQuat": [
+          -0.05935739889203868,
+          -0.6997033012335864,
+          0.059983431653341815,
+          0.7094321513483028
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.04164,
+          "height": 0.038720000000000004,
+          "pos": [
+            -0.03686,
+            -0.01336,
+            0.006
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.04164,
+          "height": 0.038720000000000004,
+          "pos": [
+            -0.03686,
+            0.01336,
+            0.006
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "waist_roll_link_visual_1",
+      "relation": {
+        "parent": "waist_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_waist_roll_link_stl",
+          "group": "visual",
+          "material": "mat_waist_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "waist_yaw_link",
+      "transform": {
+        "pos": [
+          -0.030845,
+          0.0,
+          0.068
+        ]
+      },
+      "relation": {
+        "parent": "waist_roll_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "range": [
+          -2.91,
+          2.91
+        ],
+        "armature": 0.029085325,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -141.7,
+            141.7
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 8.343,
+        "centerOfMass": [
+          -0.001424,
+          8e-05,
+          0.128866
+        ],
+        "inertia": [
+          0.04108134261257688,
+          0.09285295710470173,
+          0.10924270028272134
+        ],
+        "inertiaQuat": [
+          -0.6962182658257019,
+          0.0006659986552842768,
+          0.7178296556903703,
+          0.000517868600869133
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.09,
+          "height": 0.040600000000000004,
+          "pos": [
+            0.01,
+            0.0,
+            0.0597
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.12,
+          "height": 0.065,
+          "pos": [
+            -0.0244,
+            0.0,
+            0.1775
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        },
+        {
+          "type": "capsule",
+          "radius": 0.088,
+          "height": 0.0016799999999999593,
+          "pos": [
+            -0.0185,
+            0.0,
+            0.33584
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "waist_yaw_link_visual_1",
+      "relation": {
+        "parent": "waist_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_bandit_torso_visual_stl",
+          "group": "visual",
+          "material": "mat_waist_yaw_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      },
+      "transform": {
+        "pos": [
+          0.04,
+          0.0,
+          -0.12
+        ],
+        "rot": [
+          0.0,
+          0.0,
+          90.0
+        ]
+      }
+    },
+    {
+      "name": "waist_yaw_link_visual_2",
+      "relation": {
+        "parent": "waist_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_bandit_head_textured_obj",
+          "group": "visual",
+          "material": "mat_bandit_atlas"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      },
+      "transform": {
+        "pos": [
+          0.04,
+          0.0,
+          -0.12
+        ],
+        "rot": [
+          0.0,
+          0.0,
+          90.0
+        ]
+      }
+    },
+    {
+      "name": "waist_yaw_link_visual_3",
+      "relation": {
+        "parent": "waist_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_bandit_chest_plate_obj",
+          "group": "visual",
+          "material": "mat_bandit_atlas"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      },
+      "transform": {
+        "pos": [
+          0.04,
+          0.0,
+          -0.12
+        ],
+        "rot": [
+          0.0,
+          -0.0,
+          90.0
+        ]
+      }
+    },
+    {
+      "name": "waist_yaw_link_visual_4",
+      "relation": {
+        "parent": "waist_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_bandit_tail_obj",
+          "group": "visual",
+          "material": "mat_bandit_atlas"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      },
+      "transform": {
+        "pos": [
+          0.04,
+          0.0,
+          -0.12
+        ],
+        "rot": [
+          0.0,
+          0.0,
+          90.0
+        ]
+      }
+    },
+    {
+      "name": "left_shoulder_pitch_link",
+      "transform": {
+        "pos": [
+          0.0,
+          0.116496195,
+          0.198487156
+        ]
+      },
+      "relation": {
+        "parent": "waist_yaw_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.99619,
+          0.087156
+        ],
+        "range": [
+          -3.4,
+          2.35
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -35.3,
+            35.3
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.82850012,
+        "centerOfMass": [
+          -0.00227488,
+          0.05877203,
+          -0.01145894
+        ],
+        "inertia": [
+          0.0005625548585983871,
+          0.0007776639481876288,
+          0.0007866811932139839
+        ],
+        "inertiaQuat": [
+          0.07823310401611702,
+          0.6693228253008784,
+          0.69989396120453,
+          -0.23671708860300955
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.03808,
+          "height": 0.028715131899401048,
+          "pos": [
+            -0.00326,
+            0.04933,
+            -0.00724
+          ],
+          "quat": [
+            0.5751097775820874,
+            -0.8180762456699754,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_shoulder_pitch_link_visual_1",
+      "relation": {
+        "parent": "left_shoulder_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_shoulder_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_left_shoulder_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_shoulder_roll_link",
+      "transform": {
+        "pos": [
+          0.028743295,
+          0.065349445,
+          -0.014608907
+        ]
+      },
+      "relation": {
+        "parent": "left_shoulder_pitch_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "range": [
+          -0.47,
+          2.9
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -35.3,
+            35.3
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.76916758,
+        "centerOfMass": [
+          -0.01613398,
+          5.64e-06,
+          -0.06609383
+        ],
+        "inertia": [
+          0.00046234415722731884,
+          0.0008114195454103339,
+          0.0008465562973623479
+        ],
+        "inertiaQuat": [
+          0.5685921545107239,
+          -0.0010167903224915446,
+          0.8226176066851354,
+          0.0014836232383319892
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.04,
+          "height": 0.06144000000000001,
+          "pos": [
+            -0.01906,
+            0.0,
+            -0.03728
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_shoulder_roll_link_visual_1",
+      "relation": {
+        "parent": "left_shoulder_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_shoulder_roll_link_stl",
+          "group": "visual",
+          "material": "mat_left_shoulder_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_shoulder_yaw_link",
+      "transform": {
+        "pos": [
+          -0.019057493,
+          0.0,
+          -0.10500004
+        ]
+      },
+      "relation": {
+        "parent": "left_shoulder_roll_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "range": [
+          -2.87,
+          2.87
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -35.3,
+            35.3
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.9522732,
+        "centerOfMass": [
+          0.0144757,
+          -0.00112029,
+          -0.0858748
+        ],
+        "inertia": [
+          0.0007223607484856683,
+          0.0018789520961645537,
+          0.0018937171553497767
+        ],
+        "inertiaQuat": [
+          0.7549720393819804,
+          0.2651031667087625,
+          0.5633064378982046,
+          -0.20596938552813085
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.04008,
+          "height": 0.08633436627438694,
+          "pos": [
+            0.00912,
+            8e-05,
+            -0.05929
+          ],
+          "quat": [
+            0.9944410838683021,
+            0.0,
+            -0.10529449517822265,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_shoulder_yaw_link_visual_1",
+      "relation": {
+        "parent": "left_shoulder_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_shoulder_yaw_link_stl",
+          "group": "visual",
+          "material": "mat_left_shoulder_yaw_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_elbow_link",
+      "transform": {
+        "pos": [
+          0.020796,
+          -0.031888,
+          -0.10414
+        ]
+      },
+      "relation": {
+        "parent": "left_shoulder_yaw_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "range": [
+          -1.6,
+          1.24
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -35.3,
+            35.3
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.77922872,
+        "centerOfMass": [
+          0.07222795,
+          0.03107894,
+          -0.01809537
+        ],
+        "inertia": [
+          0.0005898070338150872,
+          0.0011257345437647003,
+          0.0011941584224202122
+        ],
+        "inertiaQuat": [
+          0.9962967815165732,
+          -0.039289428548928355,
+          0.05719593375198493,
+          0.05077094746264633
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.0422,
+          "height": 0.07528425067701743,
+          "pos": [
+            0.04223,
+            0.03186,
+            -0.00944
+          ],
+          "quat": [
+            0.662493956861283,
+            -0.0,
+            0.7490672580765232,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_elbow_link_visual_1",
+      "relation": {
+        "parent": "left_elbow_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_elbow_link_stl",
+          "group": "visual",
+          "material": "mat_left_elbow_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_wrist_link",
+      "transform": {
+        "pos": [
+          0.116093382,
+          0.031859446,
+          -0.018792758
+        ]
+      },
+      "relation": {
+        "parent": "left_elbow_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "range": [
+          -2.56,
+          2.56
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -35.3,
+            35.3
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.46025356,
+        "centerOfMass": [
+          0.10279104,
+          -0.00368067,
+          0.00149822
+        ],
+        "inertia": [
+          0.0003094511666866629,
+          0.0019997376704655625,
+          0.0020377811628477746
+        ],
+        "inertiaQuat": [
+          0.8028973955331334,
+          -0.5942027814410202,
+          0.0005785008882308221,
+          -0.047733553299418904
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.03948,
+          "height": 0.14518373083785938,
+          "pos": [
+            0.08889,
+            -0.006905,
+            0.00203
+          ],
+          "quat": [
+            0.7071067811865476,
+            0.04719443886829015,
+            0.7055300737317348,
+            -0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_wrist_link_visual_1",
+      "relation": {
+        "parent": "left_wrist_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_wrist_link_stl",
+          "group": "visual",
+          "material": "mat_left_wrist_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_shoulder_pitch_link",
+      "transform": {
+        "pos": [
+          0.0,
+          -0.116496195,
+          0.198487156
+        ]
+      },
+      "relation": {
+        "parent": "waist_yaw_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -0.99619,
+          0.087156
+        ],
+        "range": [
+          -2.35,
+          3.4
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -35.3,
+            35.3
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.82850796,
+        "centerOfMass": [
+          -0.00227477,
+          -0.05856201,
+          -0.01145858
+        ],
+        "inertia": [
+          0.0005631216468979539,
+          0.0007750237747578759,
+          0.0007841345783441698
+        ],
+        "inertiaQuat": [
+          -0.15414531667863493,
+          0.715820007204077,
+          0.6624543853326579,
+          0.15809846927130172
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.03808,
+          "height": 0.028715131899401048,
+          "pos": [
+            -0.00326,
+            -0.04933,
+            -0.00724
+          ],
+          "quat": [
+            0.8180762456699753,
+            -0.5751097775820874,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_shoulder_pitch_link_visual_1",
+      "relation": {
+        "parent": "right_shoulder_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_shoulder_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_right_shoulder_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_shoulder_roll_link",
+      "transform": {
+        "pos": [
+          0.028743295,
+          -0.065349445,
+          -0.014608907
+        ]
+      },
+      "relation": {
+        "parent": "right_shoulder_pitch_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "range": [
+          -2.9,
+          0.47
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -35.3,
+            35.3
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.80442734,
+        "centerOfMass": [
+          -0.01626203,
+          5.39e-06,
+          -0.06810375
+        ],
+        "inertia": [
+          0.0004806238750612974,
+          0.0008880995705479634,
+          0.0009216765543907395
+        ],
+        "inertiaQuat": [
+          0.5855992160187211,
+          -0.001060491385516881,
+          0.8105987647240943,
+          0.0014408969612398023
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.04,
+          "height": 0.07044,
+          "pos": [
+            -0.01906,
+            0.0,
+            -0.04178
+          ],
+          "quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_shoulder_roll_link_visual_1",
+      "relation": {
+        "parent": "right_shoulder_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_shoulder_roll_link_stl",
+          "group": "visual",
+          "material": "mat_right_shoulder_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_shoulder_yaw_link",
+      "transform": {
+        "pos": [
+          -0.019057392,
+          0.0,
+          -0.105000126
+        ]
+      },
+      "relation": {
+        "parent": "right_shoulder_roll_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "range": [
+          -2.87,
+          2.87
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -35.3,
+            35.3
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.95225273,
+        "centerOfMass": [
+          0.01430772,
+          0.0011215,
+          -0.08592529
+        ],
+        "inertia": [
+          0.0007220551912814234,
+          0.001883014119998781,
+          0.001888960688719795
+        ],
+        "inertiaQuat": [
+          -0.1515271334255115,
+          0.5816699791796756,
+          0.19150766837674182,
+          0.7759022980439398
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.04008,
+          "height": 0.08633436627438694,
+          "pos": [
+            0.00912,
+            -8e-05,
+            -0.05929
+          ],
+          "quat": [
+            0.9944410838683021,
+            0.0,
+            -0.10529449517822265,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_shoulder_yaw_link_visual_1",
+      "relation": {
+        "parent": "right_shoulder_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_shoulder_yaw_link_stl",
+          "group": "visual",
+          "material": "mat_right_shoulder_yaw_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_elbow_link",
+      "transform": {
+        "pos": [
+          0.02079568,
+          0.031887526,
+          -0.104135223
+        ]
+      },
+      "relation": {
+        "parent": "right_shoulder_yaw_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "range": [
+          -1.24,
+          1.6
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -35.3,
+            35.3
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.77922499,
+        "centerOfMass": [
+          0.07222795,
+          -0.03090613,
+          -0.01799316
+        ],
+        "inertia": [
+          0.0005887761116194946,
+          0.0011272516350363086,
+          0.001192982253344197
+        ],
+        "inertiaQuat": [
+          0.9960536850654346,
+          0.041591700711841664,
+          0.058089525117394035,
+          -0.05265732590153298
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.0422,
+          "height": 0.07528425067701743,
+          "pos": [
+            0.04223,
+            -0.03186,
+            -0.00944
+          ],
+          "quat": [
+            0.662493956861283,
+            -0.0,
+            0.7490672580765232,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_elbow_link_visual_1",
+      "relation": {
+        "parent": "right_elbow_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_elbow_link_stl",
+          "group": "visual",
+          "material": "mat_right_elbow_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_wrist_link",
+      "transform": {
+        "pos": [
+          0.116093344,
+          -0.03185937,
+          -0.01879273
+        ]
+      },
+      "relation": {
+        "parent": "right_elbow_link"
+      },
+      "joint": {
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "range": [
+          -2.56,
+          2.56
+        ],
+        "armature": 0.01,
+        "drive": {
+          "mode": "torque",
+          "ctrlrange": [
+            -35.3,
+            35.3
+          ]
+        }
+      },
+      "physics": {
+        "type": "rigid",
+        "motion": "dynamic",
+        "mass": 0.46029783,
+        "centerOfMass": [
+          0.10279542,
+          0.00367933,
+          0.00149885
+        ],
+        "inertia": [
+          0.000309444530888299,
+          0.0019995564788765708,
+          0.002037658990235129
+        ],
+        "inertiaQuat": [
+          0.8028676821779116,
+          0.5942407074003218,
+          0.0005930861903577218,
+          0.04776101790586039
+        ]
+      },
+      "geoms": [
+        {
+          "type": "capsule",
+          "radius": 0.03948,
+          "height": 0.14518373083785938,
+          "pos": [
+            0.08889,
+            0.006905,
+            0.00203
+          ],
+          "quat": [
+            0.7071067811865476,
+            -0.04719443886829015,
+            0.7055300737317348,
+            0.0
+          ],
+          "group": "collision",
+          "contype": 1,
+          "conaffinity": 1
+        }
+      ],
+      "collider": {
+        "groups": [
+          "collision"
+        ]
+      },
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_wrist_link_visual_1",
+      "relation": {
+        "parent": "right_wrist_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_wrist_link_stl",
+          "group": "visual",
+          "material": "mat_right_wrist_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    }
+  ],
+  "texture": {
+    "bandit_head_basecolor": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/textures/bandit_head_basecolor.png"
+    }
+  },
+  "material": {
+    "mat_base_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_left_hip_pitch_link_visual_1": {
+      "rgba": [
+        0.110118,
+        0.110656,
+        0.098679,
+        1.0
+      ]
+    },
+    "mat_left_hip_roll_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_left_hip_yaw_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_left_knee_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_left_ankle_pitch_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_left_ankle_roll_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_right_hip_pitch_link_visual_1": {
+      "rgba": [
+        0.146437,
+        0.141446,
+        0.121201,
+        1.0
+      ]
+    },
+    "mat_right_hip_roll_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_right_hip_yaw_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_right_knee_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_right_ankle_pitch_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_right_ankle_roll_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_waist_roll_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_waist_yaw_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_bandit_head": {
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "map": "bandit_head_basecolor"
+    },
+    "mat_left_shoulder_pitch_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_left_shoulder_roll_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_left_shoulder_yaw_link_visual_1": {
+      "rgba": [
+        0.13627,
+        0.133533,
+        0.114534,
+        1.0
+      ]
+    },
+    "mat_left_elbow_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_left_wrist_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_right_shoulder_pitch_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_right_shoulder_roll_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_right_shoulder_yaw_link_visual_1": {
+      "rgba": [
+        0.120872,
+        0.120418,
+        0.10506,
+        1.0
+      ]
+    },
+    "mat_right_elbow_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_right_wrist_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_bandit_atlas": {
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "map": "bandit_head_basecolor"
+    }
+  },
+  "mesh": {
+    "mesh_base_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/base_link.STL"
+    },
+    "mesh_left_hip_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_hip_pitch_link.STL"
+    },
+    "mesh_left_hip_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_hip_roll_link.STL"
+    },
+    "mesh_left_hip_yaw_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_hip_yaw_link.STL"
+    },
+    "mesh_left_knee_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_knee_link.STL"
+    },
+    "mesh_left_ankle_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_ankle_pitch_link.STL"
+    },
+    "mesh_left_ankle_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_ankle_roll_link.STL"
+    },
+    "mesh_right_hip_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_hip_pitch_link.STL"
+    },
+    "mesh_right_hip_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_hip_roll_link.STL"
+    },
+    "mesh_right_hip_yaw_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_hip_yaw_link.STL"
+    },
+    "mesh_right_knee_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_knee_link.STL"
+    },
+    "mesh_right_ankle_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_ankle_pitch_link.STL"
+    },
+    "mesh_right_ankle_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_ankle_roll_link.STL"
+    },
+    "mesh_waist_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/waist_roll_link.STL"
+    },
+    "mesh_bandit_torso_visual_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/bandit_torso_visual.stl"
+    },
+    "mesh_bandit_head_textured_obj": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/bandit_head_textured.obj"
+    },
+    "mesh_bandit_chest_plate_obj": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/bandit_chest_plate.obj"
+    },
+    "mesh_bandit_tail_obj": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/bandit_tail.obj"
+    },
+    "mesh_left_shoulder_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_shoulder_pitch_link.STL"
+    },
+    "mesh_left_shoulder_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_shoulder_roll_link.STL"
+    },
+    "mesh_left_shoulder_yaw_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_shoulder_yaw_link.STL"
+    },
+    "mesh_left_elbow_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_elbow_link.STL"
+    },
+    "mesh_left_wrist_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_wrist_link.STL"
+    },
+    "mesh_right_shoulder_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_shoulder_pitch_link.STL"
+    },
+    "mesh_right_shoulder_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_shoulder_roll_link.STL"
+    },
+    "mesh_right_shoulder_yaw_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_shoulder_yaw_link.STL"
+    },
+    "mesh_right_elbow_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_elbow_link.STL"
+    },
+    "mesh_right_wrist_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_wrist_link.STL"
+    }
+  },
+  "sim": {
+    "timestep": 0.005,
+    "integrator": "implicitfast",
+    "solver": "newton",
+    "iterations": 100
+  }
+}

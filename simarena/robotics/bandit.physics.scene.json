@@ -128,7 +128,7 @@
     },
     {
       "name": "bandit_rp1",
-      "asset": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/feat/bandit-physics/simarena/robotics/bandit.physics.visualfix.asset.json",
+      "asset": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/simarena/robotics/bandit.physics.asset.json",
       "transform": {
         "pos": [
           0,

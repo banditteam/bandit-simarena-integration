@@ -1,0 +1,141 @@
+{
+  "_format": "simarena/scene@1.0",
+  "name": "bandit_rp1_test",
+  "entities": [
+    {
+      "name": "ambient",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ]
+      },
+      "light": {
+        "type": "ambient",
+        "color": "#b0c4de",
+        "intensity": 0.4
+      }
+    },
+    {
+      "name": "sun",
+      "transform": {
+        "pos": [
+          5,
+          -5,
+          10
+        ]
+      },
+      "light": {
+        "type": "directional",
+        "color": "#fff5e6",
+        "intensity": 1.2,
+        "castShadow": true
+      }
+    },
+    {
+      "name": "fill",
+      "transform": {
+        "pos": [
+          -3,
+          -4,
+          4
+        ]
+      },
+      "light": {
+        "type": "directional",
+        "color": "#7ec8e3",
+        "intensity": 0.5
+      }
+    },
+    {
+      "name": "rim",
+      "transform": {
+        "pos": [
+          -2,
+          8,
+          3
+        ]
+      },
+      "light": {
+        "type": "directional",
+        "color": "#a0d8ff",
+        "intensity": 0.6
+      }
+    },
+    {
+      "name": "spot",
+      "transform": {
+        "pos": [
+          3,
+          -3,
+          6
+        ]
+      },
+      "light": {
+        "type": "spot",
+        "color": "#ffffff",
+        "intensity": 0.8,
+        "angle": 30,
+        "castShadow": true
+      }
+    },
+    {
+      "name": "hemi",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ]
+      },
+      "light": {
+        "type": "hemisphere",
+        "color": "#87ceeb",
+        "groundColor": "#545454",
+        "intensity": 0.3
+      }
+    },
+    {
+      "name": "floor",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geoms": [
+        {
+          "type": "plane",
+          "size": [
+            10,
+            10
+          ],
+          "color": "#2d3e5e",
+          "group": "visual"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      },
+      "collider": {},
+      "physics": {
+        "dynamic": false
+      }
+    },
+    {
+      "name": "bandit_rp1",
+      "asset": "https://gist.githubusercontent.com/banditteam/a2fe1893ecf2703c6521e505f9fd5c1e/raw/2810c39abb79a92b32602f08a999fdb6a7fbb3f6/gistfile1.txt",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0.82
+        ]
+      }
+    }
+  ]
+}
