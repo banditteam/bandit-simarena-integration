@@ -1,6 +1,6 @@
 ﻿# Bandit SimArena Test
 
-Public asset hosting for Bandit RP1 SimArena integration.
+Public asset hosting for Bandit SimArena integration.
 
 Source: bandit_final_v2.urdf
 Import target: .scene.json
