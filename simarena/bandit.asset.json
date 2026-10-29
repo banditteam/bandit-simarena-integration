@@ -1,0 +1,1201 @@
+{
+  "_format": "simarena/asset@1.0",
+  "name": "bandit_rp1",
+  "entities": [
+    {
+      "name": "base_link"
+    },
+    {
+      "name": "base_link_visual_1",
+      "relation": {
+        "parent": "base_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_base_link_stl",
+          "group": "visual",
+          "material": "mat_base_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_hip_pitch_link",
+      "transform": {
+        "pos": [
+          -0.03843,
+          0.062987,
+          -0.051639
+        ]
+      },
+      "relation": {
+        "parent": "base_link"
+      }
+    },
+    {
+      "name": "left_hip_pitch_link_visual_1",
+      "relation": {
+        "parent": "left_hip_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_hip_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_left_hip_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_hip_roll_link",
+      "transform": {
+        "pos": [
+          0.031915,
+          0.061254,
+          -0.060672
+        ]
+      },
+      "relation": {
+        "parent": "left_hip_pitch_link"
+      }
+    },
+    {
+      "name": "left_hip_roll_link_visual_1",
+      "relation": {
+        "parent": "left_hip_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_hip_roll_link_stl",
+          "group": "visual",
+          "material": "mat_left_hip_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_hip_yaw_link",
+      "transform": {
+        "pos": [
+          -0.012698,
+          0.0,
+          -0.129
+        ]
+      },
+      "relation": {
+        "parent": "left_hip_roll_link"
+      }
+    },
+    {
+      "name": "left_hip_yaw_link_visual_1",
+      "relation": {
+        "parent": "left_hip_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_hip_yaw_link_stl",
+          "group": "visual",
+          "material": "mat_left_hip_yaw_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_knee_link",
+      "transform": {
+        "pos": [
+          -0.033201,
+          -0.030809,
+          -0.16509
+        ]
+      },
+      "relation": {
+        "parent": "left_hip_yaw_link"
+      }
+    },
+    {
+      "name": "left_knee_link_visual_1",
+      "relation": {
+        "parent": "left_knee_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_knee_link_stl",
+          "group": "visual",
+          "material": "mat_left_knee_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_ankle_pitch_link",
+      "transform": {
+        "pos": [
+          0.03131,
+          0.030811,
+          -0.30533
+        ]
+      },
+      "relation": {
+        "parent": "left_knee_link"
+      }
+    },
+    {
+      "name": "left_ankle_pitch_link_visual_1",
+      "relation": {
+        "parent": "left_ankle_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_ankle_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_left_ankle_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_ankle_roll_link",
+      "transform": {
+        "pos": [
+          0.013067,
+          0.0,
+          -0.018922
+        ]
+      },
+      "relation": {
+        "parent": "left_ankle_pitch_link"
+      }
+    },
+    {
+      "name": "left_ankle_roll_link_visual_1",
+      "relation": {
+        "parent": "left_ankle_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_ankle_roll_link_stl",
+          "group": "visual",
+          "material": "mat_left_ankle_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_hip_pitch_link",
+      "transform": {
+        "pos": [
+          -0.03843,
+          -0.069013,
+          -0.051639
+        ]
+      },
+      "relation": {
+        "parent": "base_link"
+      }
+    },
+    {
+      "name": "right_hip_pitch_link_visual_1",
+      "relation": {
+        "parent": "right_hip_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_hip_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_right_hip_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_hip_roll_link",
+      "transform": {
+        "pos": [
+          0.031915,
+          -0.061254,
+          -0.060672
+        ]
+      },
+      "relation": {
+        "parent": "right_hip_pitch_link"
+      }
+    },
+    {
+      "name": "right_hip_roll_link_visual_1",
+      "relation": {
+        "parent": "right_hip_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_hip_roll_link_stl",
+          "group": "visual",
+          "material": "mat_right_hip_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_hip_yaw_link",
+      "transform": {
+        "pos": [
+          -0.012698,
+          0.0,
+          -0.129
+        ]
+      },
+      "relation": {
+        "parent": "right_hip_roll_link"
+      }
+    },
+    {
+      "name": "right_hip_yaw_link_visual_1",
+      "relation": {
+        "parent": "right_hip_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_hip_yaw_link_stl",
+          "group": "visual",
+          "material": "mat_right_hip_yaw_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_knee_link",
+      "transform": {
+        "pos": [
+          -0.033201,
+          0.030808967,
+          -0.165090023
+        ]
+      },
+      "relation": {
+        "parent": "right_hip_yaw_link"
+      }
+    },
+    {
+      "name": "right_knee_link_visual_1",
+      "relation": {
+        "parent": "right_knee_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_knee_link_stl",
+          "group": "visual",
+          "material": "mat_right_knee_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_ankle_pitch_link",
+      "transform": {
+        "pos": [
+          0.03131,
+          -0.030809,
+          -0.30533
+        ]
+      },
+      "relation": {
+        "parent": "right_knee_link"
+      }
+    },
+    {
+      "name": "right_ankle_pitch_link_visual_1",
+      "relation": {
+        "parent": "right_ankle_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_ankle_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_right_ankle_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_ankle_roll_link",
+      "transform": {
+        "pos": [
+          0.013067,
+          0.0,
+          -0.018922
+        ]
+      },
+      "relation": {
+        "parent": "right_ankle_pitch_link"
+      }
+    },
+    {
+      "name": "right_ankle_roll_link_visual_1",
+      "relation": {
+        "parent": "right_ankle_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_ankle_roll_link_stl",
+          "group": "visual",
+          "material": "mat_right_ankle_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "waist_roll_link",
+      "transform": {
+        "pos": [
+          -0.007579949,
+          -0.003012699,
+          0.05298383
+        ]
+      },
+      "relation": {
+        "parent": "base_link"
+      }
+    },
+    {
+      "name": "waist_roll_link_visual_1",
+      "relation": {
+        "parent": "waist_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_waist_roll_link_stl",
+          "group": "visual",
+          "material": "mat_waist_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "waist_yaw_link",
+      "transform": {
+        "pos": [
+          -0.030845,
+          0.0,
+          0.068
+        ]
+      },
+      "relation": {
+        "parent": "waist_roll_link"
+      }
+    },
+    {
+      "name": "waist_yaw_link_visual_1",
+      "relation": {
+        "parent": "waist_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_bandit_torso_visual_stl",
+          "group": "visual",
+          "material": "mat_waist_yaw_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      },
+      "transform": {
+        "pos": [
+          0.04,
+          0.0,
+          -0.12
+        ],
+        "rot": [
+          0.0,
+          0.0,
+          90.0
+        ]
+      }
+    },
+    {
+      "name": "waist_yaw_link_visual_2",
+      "relation": {
+        "parent": "waist_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_bandit_head_textured_obj",
+          "group": "visual",
+          "material": "mat_bandit_head"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      },
+      "transform": {
+        "pos": [
+          0.04,
+          0.0,
+          -0.12
+        ],
+        "rot": [
+          0.0,
+          0.0,
+          90.0
+        ]
+      }
+    },
+    {
+      "name": "waist_yaw_link_visual_3",
+      "relation": {
+        "parent": "waist_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_bandit_chest_plate_obj",
+          "group": "visual"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      },
+      "transform": {
+        "pos": [
+          0.04,
+          0.0,
+          -0.12
+        ],
+        "rot": [
+          0.0,
+          -0.0,
+          90.0
+        ]
+      }
+    },
+    {
+      "name": "waist_yaw_link_visual_4",
+      "relation": {
+        "parent": "waist_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_bandit_tail_obj",
+          "group": "visual"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      },
+      "transform": {
+        "pos": [
+          0.04,
+          0.0,
+          -0.12
+        ],
+        "rot": [
+          0.0,
+          0.0,
+          90.0
+        ]
+      }
+    },
+    {
+      "name": "left_shoulder_pitch_link",
+      "transform": {
+        "pos": [
+          0.0,
+          0.116496195,
+          0.198487156
+        ]
+      },
+      "relation": {
+        "parent": "waist_yaw_link"
+      }
+    },
+    {
+      "name": "left_shoulder_pitch_link_visual_1",
+      "relation": {
+        "parent": "left_shoulder_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_shoulder_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_left_shoulder_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_shoulder_roll_link",
+      "transform": {
+        "pos": [
+          0.028743295,
+          0.065349445,
+          -0.014608907
+        ]
+      },
+      "relation": {
+        "parent": "left_shoulder_pitch_link"
+      }
+    },
+    {
+      "name": "left_shoulder_roll_link_visual_1",
+      "relation": {
+        "parent": "left_shoulder_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_shoulder_roll_link_stl",
+          "group": "visual",
+          "material": "mat_left_shoulder_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_shoulder_yaw_link",
+      "transform": {
+        "pos": [
+          -0.019057493,
+          0.0,
+          -0.10500004
+        ]
+      },
+      "relation": {
+        "parent": "left_shoulder_roll_link"
+      }
+    },
+    {
+      "name": "left_shoulder_yaw_link_visual_1",
+      "relation": {
+        "parent": "left_shoulder_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_shoulder_yaw_link_stl",
+          "group": "visual",
+          "material": "mat_left_shoulder_yaw_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_elbow_link",
+      "transform": {
+        "pos": [
+          0.020796,
+          -0.031888,
+          -0.10414
+        ]
+      },
+      "relation": {
+        "parent": "left_shoulder_yaw_link"
+      }
+    },
+    {
+      "name": "left_elbow_link_visual_1",
+      "relation": {
+        "parent": "left_elbow_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_elbow_link_stl",
+          "group": "visual",
+          "material": "mat_left_elbow_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "left_wrist_link",
+      "transform": {
+        "pos": [
+          0.116093382,
+          0.031859446,
+          -0.018792758
+        ]
+      },
+      "relation": {
+        "parent": "left_elbow_link"
+      }
+    },
+    {
+      "name": "left_wrist_link_visual_1",
+      "relation": {
+        "parent": "left_wrist_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_left_wrist_link_stl",
+          "group": "visual",
+          "material": "mat_left_wrist_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_shoulder_pitch_link",
+      "transform": {
+        "pos": [
+          0.0,
+          -0.116496195,
+          0.198487156
+        ]
+      },
+      "relation": {
+        "parent": "waist_yaw_link"
+      }
+    },
+    {
+      "name": "right_shoulder_pitch_link_visual_1",
+      "relation": {
+        "parent": "right_shoulder_pitch_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_shoulder_pitch_link_stl",
+          "group": "visual",
+          "material": "mat_right_shoulder_pitch_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_shoulder_roll_link",
+      "transform": {
+        "pos": [
+          0.028743295,
+          -0.065349445,
+          -0.014608907
+        ]
+      },
+      "relation": {
+        "parent": "right_shoulder_pitch_link"
+      }
+    },
+    {
+      "name": "right_shoulder_roll_link_visual_1",
+      "relation": {
+        "parent": "right_shoulder_roll_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_shoulder_roll_link_stl",
+          "group": "visual",
+          "material": "mat_right_shoulder_roll_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_shoulder_yaw_link",
+      "transform": {
+        "pos": [
+          -0.019057392,
+          0.0,
+          -0.105000126
+        ]
+      },
+      "relation": {
+        "parent": "right_shoulder_roll_link"
+      }
+    },
+    {
+      "name": "right_shoulder_yaw_link_visual_1",
+      "relation": {
+        "parent": "right_shoulder_yaw_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_shoulder_yaw_link_stl",
+          "group": "visual",
+          "material": "mat_right_shoulder_yaw_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_elbow_link",
+      "transform": {
+        "pos": [
+          0.02079568,
+          0.031887526,
+          -0.104135223
+        ]
+      },
+      "relation": {
+        "parent": "right_shoulder_yaw_link"
+      }
+    },
+    {
+      "name": "right_elbow_link_visual_1",
+      "relation": {
+        "parent": "right_elbow_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_elbow_link_stl",
+          "group": "visual",
+          "material": "mat_right_elbow_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    },
+    {
+      "name": "right_wrist_link",
+      "transform": {
+        "pos": [
+          0.116093344,
+          -0.03185937,
+          -0.01879273
+        ]
+      },
+      "relation": {
+        "parent": "right_elbow_link"
+      }
+    },
+    {
+      "name": "right_wrist_link_visual_1",
+      "relation": {
+        "parent": "right_wrist_link"
+      },
+      "geoms": [
+        {
+          "type": "mesh",
+          "mesh": "mesh_right_wrist_link_stl",
+          "group": "visual",
+          "material": "mat_right_wrist_link_visual_1"
+        }
+      ],
+      "visual": {
+        "groups": [
+          "visual"
+        ]
+      }
+    }
+  ],
+  "texture": {
+    "bandit_head_basecolor": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/textures/bandit_head_basecolor.png"
+    }
+  },
+  "material": {
+    "mat_base_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_left_hip_pitch_link_visual_1": {
+      "rgba": [
+        0.110118,
+        0.110656,
+        0.098679,
+        1.0
+      ]
+    },
+    "mat_left_hip_roll_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_left_hip_yaw_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_left_knee_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_left_ankle_pitch_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_left_ankle_roll_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_right_hip_pitch_link_visual_1": {
+      "rgba": [
+        0.146437,
+        0.141446,
+        0.121201,
+        1.0
+      ]
+    },
+    "mat_right_hip_roll_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_right_hip_yaw_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_right_knee_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_right_ankle_pitch_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_right_ankle_roll_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_waist_roll_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_waist_yaw_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_bandit_head": {
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "map": "bandit_head_basecolor"
+    },
+    "mat_left_shoulder_pitch_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_left_shoulder_roll_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_left_shoulder_yaw_link_visual_1": {
+      "rgba": [
+        0.13627,
+        0.133533,
+        0.114534,
+        1.0
+      ]
+    },
+    "mat_left_elbow_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_left_wrist_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_right_shoulder_pitch_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_right_shoulder_roll_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    },
+    "mat_right_shoulder_yaw_link_visual_1": {
+      "rgba": [
+        0.120872,
+        0.120418,
+        0.10506,
+        1.0
+      ]
+    },
+    "mat_right_elbow_link_visual_1": {
+      "rgba": [
+        0.788235,
+        0.172549,
+        0.141176,
+        1.0
+      ]
+    },
+    "mat_right_wrist_link_visual_1": {
+      "rgba": [
+        0.847059,
+        0.819608,
+        0.764706,
+        1.0
+      ]
+    }
+  },
+  "mesh": {
+    "mesh_base_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/base_link.STL"
+    },
+    "mesh_left_hip_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_hip_pitch_link.STL"
+    },
+    "mesh_left_hip_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_hip_roll_link.STL"
+    },
+    "mesh_left_hip_yaw_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_hip_yaw_link.STL"
+    },
+    "mesh_left_knee_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_knee_link.STL"
+    },
+    "mesh_left_ankle_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_ankle_pitch_link.STL"
+    },
+    "mesh_left_ankle_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_ankle_roll_link.STL"
+    },
+    "mesh_right_hip_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_hip_pitch_link.STL"
+    },
+    "mesh_right_hip_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_hip_roll_link.STL"
+    },
+    "mesh_right_hip_yaw_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_hip_yaw_link.STL"
+    },
+    "mesh_right_knee_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_knee_link.STL"
+    },
+    "mesh_right_ankle_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_ankle_pitch_link.STL"
+    },
+    "mesh_right_ankle_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_ankle_roll_link.STL"
+    },
+    "mesh_waist_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/waist_roll_link.STL"
+    },
+    "mesh_bandit_torso_visual_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/bandit_torso_visual.stl"
+    },
+    "mesh_bandit_head_textured_obj": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/bandit_head_textured.obj"
+    },
+    "mesh_bandit_chest_plate_obj": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/bandit_chest_plate.obj"
+    },
+    "mesh_bandit_tail_obj": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/bandit_tail.obj"
+    },
+    "mesh_left_shoulder_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_shoulder_pitch_link.STL"
+    },
+    "mesh_left_shoulder_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_shoulder_roll_link.STL"
+    },
+    "mesh_left_shoulder_yaw_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_shoulder_yaw_link.STL"
+    },
+    "mesh_left_elbow_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_elbow_link.STL"
+    },
+    "mesh_left_wrist_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/left_wrist_link.STL"
+    },
+    "mesh_right_shoulder_pitch_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_shoulder_pitch_link.STL"
+    },
+    "mesh_right_shoulder_roll_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_shoulder_roll_link.STL"
+    },
+    "mesh_right_shoulder_yaw_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_shoulder_yaw_link.STL"
+    },
+    "mesh_right_elbow_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_elbow_link.STL"
+    },
+    "mesh_right_wrist_link_stl": {
+      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/meshes/right_wrist_link.STL"
+    }
+  }
+}
