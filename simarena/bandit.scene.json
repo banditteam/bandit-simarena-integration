@@ -128,7 +128,7 @@
     },
     {
       "name": "bandit_rp1",
-      "asset": "https://raw.githubusercontent.com/banditteam/bandit-simarena-test/main/simarena/bandit.asset.json",
+      "asset": "https://gist.githubusercontent.com/banditteam/614398431e479b775ccb57f7978c850c/raw/dd310c1cf2d19c0bc861243cddb5c41cb1f344a5/gistfile1.txt",
       "transform": {
         "pos": [
           0,

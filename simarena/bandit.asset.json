@@ -494,7 +494,7 @@
           "type": "mesh",
           "mesh": "mesh_bandit_head_textured_obj",
           "group": "visual",
-          "material": "mat_bandit_head"
+          "material": "mat_bandit_atlas"
         }
       ],
       "visual": {
@@ -524,7 +524,8 @@
         {
           "type": "mesh",
           "mesh": "mesh_bandit_chest_plate_obj",
-          "group": "visual"
+          "group": "visual",
+          "material": "mat_bandit_atlas"
         }
       ],
       "visual": {
@@ -554,7 +555,8 @@
         {
           "type": "mesh",
           "mesh": "mesh_bandit_tail_obj",
-          "group": "visual"
+          "group": "visual",
+          "material": "mat_bandit_atlas"
         }
       ],
       "visual": {
@@ -1110,6 +1112,15 @@
         0.764706,
         1.0
       ]
+    },
+    "mat_bandit_atlas": {
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "map": "bandit_head_basecolor"
     }
   },
   "mesh": {
