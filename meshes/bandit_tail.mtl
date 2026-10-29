@@ -1,0 +1,8 @@
+newmtl Material_0.001
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+Ns 20
+d 1
+illum 2
+map_Kd textures/bandit_head_basecolor.png
