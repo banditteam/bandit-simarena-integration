@@ -1,0 +1,184 @@
+
+name: Bandit Dev Updates
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  telegram-notification:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Announce Bandit development update
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TOPIC_ID: ${{ secrets.TELEGRAM_TOPIC_ID }}
+          REPOSITORY: ${{ github.event.repository.name }}
+          BRANCH: ${{ github.ref_name }}
+          ACTOR: ${{ github.actor }}
+
+        run: |
+          python3 - <<'PY'
+          import os
+          import json
+          import html
+          import re
+          import urllib.request
+          import urllib.error
+
+          # Read GitHub's push event
+          with open(
+              os.environ["GITHUB_EVENT_PATH"],
+              encoding="utf-8"
+          ) as f:
+              event = json.load(f)
+
+          commits = event.get("commits", [])
+          head = event.get("head_commit") or {}
+
+          raw_message = (
+              head.get("message")
+              or "New development update"
+          )
+
+          # Clean technical GitHub merge messages
+          def clean_message(message):
+              lines = message.strip().splitlines()
+
+              if not lines:
+                  return "New development update"
+
+              first = lines[0].strip()
+
+              if re.match(
+                  r"^Merge pull request #\d+\b",
+                  first
+              ):
+                  remaining = [
+                      line.strip()
+                      for line in lines[1:]
+                      if line.strip()
+                  ]
+
+                  if remaining:
+                      return "\n".join(remaining)
+
+                  # Fallback to meaningful commit
+                  for commit in reversed(commits):
+                      msg = commit.get("message", "").strip()
+
+                      if msg and not msg.startswith("Merge "):
+                          return msg
+
+                  return "New changes merged into main"
+
+              return message.strip()
+
+          description = html.escape(
+              clean_message(raw_message)[:1500]
+          )
+
+          # Repository and contributor information
+          repository = html.escape(
+              os.environ["REPOSITORY"]
+          )
+          author = html.escape(
+              os.environ["ACTOR"]
+          )
+          branch = html.escape(
+              os.environ["BRANCH"]
+          )
+
+          count = len(commits)
+
+          # Prefer link to all pushed changes
+          url = (
+              event.get("compare")
+              or head.get("url", "")
+          )
+
+          # Construct Bandit Telegram announcement
+          message = (
+              "🔧 <b>BANDIT DEV LOG</b>\n\n"
+
+              "New progress in Bandit's development! 🦝\n\n"
+
+              f"📂 <b>Repository:</b> {repository}\n\n"
+
+              f"<b>What's changed?</b>\n"
+              f"{description}\n\n"
+
+              f"👨‍💻 Contributor: {author}\n"
+
+              f"📦 {count} "
+              f"commit{'s' if count != 1 else ''} "
+              f"pushed to {branch}\n\n"
+
+              "⚡ Every commit brings Bandit "
+              "closer to life."
+          )
+
+          # Add GitHub link
+          if url and url.startswith("https://github.com/"):
+              safe_url = html.escape(
+                  url, quote=True
+              )
+
+              message += (
+                  f'\n\n🔗 <a href="{safe_url}">'
+                  "Explore the changes</a>"
+              )
+
+          # Prepare Telegram API request
+          payload = json.dumps({
+              "chat_id": os.environ["CHAT_ID"],
+              "message_thread_id": int(
+                  os.environ["TOPIC_ID"]
+              ),
+              "text": message,
+              "parse_mode": "HTML",
+              "link_preview_options": {
+                  "is_disabled": True
+              }
+          }).encode("utf-8")
+
+          request = urllib.request.Request(
+              "https://api.telegram.org/bot"
+              + os.environ["BOT_TOKEN"]
+              + "/sendMessage",
+              data=payload,
+              headers={
+                  "Content-Type": "application/json"
+              },
+              method="POST"
+          )
+
+          # Send notification and verify success
+          try:
+              with urllib.request.urlopen(
+                  request, timeout=20
+              ) as response:
+                  result = json.load(response)
+
+                  if not result.get("ok"):
+                      raise RuntimeError(
+                          "Telegram rejected the message"
+                      )
+
+                  print(
+                      "Bandit notification sent "
+                      f"from {repository}!"
+                  )
+
+          except urllib.error.HTTPError as error:
+              details = error.read().decode(
+                  "utf-8", errors="replace"
+              )
+              raise RuntimeError(
+                  f"Telegram API error: {details}"
+              ) from error
+
+          PY
