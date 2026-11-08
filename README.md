@@ -10,3 +10,5 @@ All uploaded OBJ meshes were checked for zero OBJ line-element records.
 
 The URDF is a reference for conversion and is not imported
 directly into SimArena.
+
+[**Storage_Reference(gist)**](https://gist.github.com/banditteam)
