@@ -151,7 +151,22 @@
           0.25,
           0.25
         ]
-      }
+      },
+      "geoms": [
+        {
+          "name": "wave_root_inertia_probe",
+          "type": "sphere",
+          "pos": [
+            -0.03786057,
+            -0.00301243,
+            -0.04479345
+          ],
+          "radius": 0.06,
+          "group": "collision",
+          "contype": 0,
+          "conaffinity": 0
+        }
+      ]
     },
     {
       "name": "base_link_visual_1",
