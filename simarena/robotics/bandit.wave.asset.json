@@ -1,6 +1,6 @@
 {
   "_format": "simarena/asset@1.0",
-  "name": "bandit_wave_policy_probe",
+  "name": "bandit_wave_collision_probe",
   "entities": [
     {
       "name": "base_link",
@@ -158,14 +158,7 @@
       "relation": {
         "parent": "base_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_base_link_stl",
-          "group": "visual",
-          "material": "mat_base_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -262,14 +255,7 @@
       "relation": {
         "parent": "left_hip_pitch_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_hip_pitch_link_stl",
-          "group": "visual",
-          "material": "mat_left_hip_pitch_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -366,14 +352,7 @@
       "relation": {
         "parent": "left_hip_roll_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_hip_roll_link_stl",
-          "group": "visual",
-          "material": "mat_left_hip_roll_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -470,14 +449,7 @@
       "relation": {
         "parent": "left_hip_yaw_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_hip_yaw_link_stl",
-          "group": "visual",
-          "material": "mat_left_hip_yaw_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -593,14 +565,7 @@
       "relation": {
         "parent": "left_knee_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_knee_link_stl",
-          "group": "visual",
-          "material": "mat_left_knee_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -697,14 +662,7 @@
       "relation": {
         "parent": "left_ankle_pitch_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_ankle_pitch_link_stl",
-          "group": "visual",
-          "material": "mat_left_ankle_pitch_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -915,14 +873,7 @@
       "relation": {
         "parent": "left_ankle_roll_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_ankle_roll_link_stl",
-          "group": "visual",
-          "material": "mat_left_ankle_roll_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -1019,14 +970,7 @@
       "relation": {
         "parent": "right_hip_pitch_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_hip_pitch_link_stl",
-          "group": "visual",
-          "material": "mat_right_hip_pitch_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -1123,14 +1067,7 @@
       "relation": {
         "parent": "right_hip_roll_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_hip_roll_link_stl",
-          "group": "visual",
-          "material": "mat_right_hip_roll_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -1227,14 +1164,7 @@
       "relation": {
         "parent": "right_hip_yaw_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_hip_yaw_link_stl",
-          "group": "visual",
-          "material": "mat_right_hip_yaw_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -1350,14 +1280,7 @@
       "relation": {
         "parent": "right_knee_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_knee_link_stl",
-          "group": "visual",
-          "material": "mat_right_knee_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -1454,14 +1377,7 @@
       "relation": {
         "parent": "right_ankle_pitch_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_ankle_pitch_link_stl",
-          "group": "visual",
-          "material": "mat_right_ankle_pitch_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -1672,14 +1588,7 @@
       "relation": {
         "parent": "right_ankle_roll_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_ankle_roll_link_stl",
-          "group": "visual",
-          "material": "mat_right_ankle_roll_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -1795,14 +1704,7 @@
       "relation": {
         "parent": "waist_roll_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_waist_roll_link_stl",
-          "group": "visual",
-          "material": "mat_waist_roll_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -1937,14 +1839,7 @@
       "relation": {
         "parent": "waist_yaw_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_bandit_torso_visual_stl",
-          "group": "visual",
-          "material": "mat_waist_yaw_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -1968,14 +1863,7 @@
       "relation": {
         "parent": "waist_yaw_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_bandit_head_textured_obj",
-          "group": "visual",
-          "material": "mat_bandit_atlas"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -1999,14 +1887,7 @@
       "relation": {
         "parent": "waist_yaw_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_bandit_chest_plate_obj",
-          "group": "visual",
-          "material": "mat_bandit_atlas"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -2030,14 +1911,7 @@
       "relation": {
         "parent": "waist_yaw_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_bandit_tail_obj",
-          "group": "visual",
-          "material": "mat_bandit_atlas"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -2146,14 +2020,7 @@
       "relation": {
         "parent": "left_shoulder_pitch_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_shoulder_pitch_link_stl",
-          "group": "visual",
-          "material": "mat_left_shoulder_pitch_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -2250,14 +2117,7 @@
       "relation": {
         "parent": "left_shoulder_roll_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_shoulder_roll_link_stl",
-          "group": "visual",
-          "material": "mat_left_shoulder_roll_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -2354,14 +2214,7 @@
       "relation": {
         "parent": "left_shoulder_yaw_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_shoulder_yaw_link_stl",
-          "group": "visual",
-          "material": "mat_left_shoulder_yaw_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -2458,14 +2311,7 @@
       "relation": {
         "parent": "left_elbow_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_elbow_link_stl",
-          "group": "visual",
-          "material": "mat_left_elbow_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -2562,14 +2408,7 @@
       "relation": {
         "parent": "left_wrist_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_left_wrist_link_stl",
-          "group": "visual",
-          "material": "mat_left_wrist_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -2666,14 +2505,7 @@
       "relation": {
         "parent": "right_shoulder_pitch_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_shoulder_pitch_link_stl",
-          "group": "visual",
-          "material": "mat_right_shoulder_pitch_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -2770,14 +2602,7 @@
       "relation": {
         "parent": "right_shoulder_roll_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_shoulder_roll_link_stl",
-          "group": "visual",
-          "material": "mat_right_shoulder_roll_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -2874,14 +2699,7 @@
       "relation": {
         "parent": "right_shoulder_yaw_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_shoulder_yaw_link_stl",
-          "group": "visual",
-          "material": "mat_right_shoulder_yaw_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -2978,14 +2796,7 @@
       "relation": {
         "parent": "right_elbow_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_elbow_link_stl",
-          "group": "visual",
-          "material": "mat_right_elbow_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -3082,14 +2893,7 @@
       "relation": {
         "parent": "right_wrist_link"
       },
-      "geoms": [
-        {
-          "type": "mesh",
-          "mesh": "mesh_right_wrist_link_stl",
-          "group": "visual",
-          "material": "mat_right_wrist_link_visual_1"
-        }
-      ],
+      "geoms": [],
       "visual": {
         "groups": [
           "visual"
@@ -3320,92 +3124,6 @@
         1
       ],
       "map": "bandit_head_basecolor"
-    }
-  },
-  "mesh": {
-    "mesh_base_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/base_link.STL"
-    },
-    "mesh_left_hip_pitch_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_hip_pitch_link.STL"
-    },
-    "mesh_left_hip_roll_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_hip_roll_link.STL"
-    },
-    "mesh_left_hip_yaw_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_hip_yaw_link.STL"
-    },
-    "mesh_left_knee_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_knee_link.STL"
-    },
-    "mesh_left_ankle_pitch_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_ankle_pitch_link.STL"
-    },
-    "mesh_left_ankle_roll_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_ankle_roll_link.STL"
-    },
-    "mesh_right_hip_pitch_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_hip_pitch_link.STL"
-    },
-    "mesh_right_hip_roll_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_hip_roll_link.STL"
-    },
-    "mesh_right_hip_yaw_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_hip_yaw_link.STL"
-    },
-    "mesh_right_knee_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_knee_link.STL"
-    },
-    "mesh_right_ankle_pitch_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_ankle_pitch_link.STL"
-    },
-    "mesh_right_ankle_roll_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_ankle_roll_link.STL"
-    },
-    "mesh_waist_roll_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/waist_roll_link.STL"
-    },
-    "mesh_bandit_torso_visual_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/bandit_torso_visual.stl"
-    },
-    "mesh_bandit_head_textured_obj": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/bandit_head_textured.obj"
-    },
-    "mesh_bandit_chest_plate_obj": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/bandit_chest_plate.obj"
-    },
-    "mesh_bandit_tail_obj": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/bandit_tail.obj"
-    },
-    "mesh_left_shoulder_pitch_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_shoulder_pitch_link.STL"
-    },
-    "mesh_left_shoulder_roll_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_shoulder_roll_link.STL"
-    },
-    "mesh_left_shoulder_yaw_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_shoulder_yaw_link.STL"
-    },
-    "mesh_left_elbow_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_elbow_link.STL"
-    },
-    "mesh_left_wrist_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/left_wrist_link.STL"
-    },
-    "mesh_right_shoulder_pitch_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_shoulder_pitch_link.STL"
-    },
-    "mesh_right_shoulder_roll_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_shoulder_roll_link.STL"
-    },
-    "mesh_right_shoulder_yaw_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_shoulder_yaw_link.STL"
-    },
-    "mesh_right_elbow_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_elbow_link.STL"
-    },
-    "mesh_right_wrist_link_stl": {
-      "file": "https://raw.githubusercontent.com/banditteam/bandit-simarena-integration/main/meshes/right_wrist_link.STL"
     }
   },
   "sim": {
