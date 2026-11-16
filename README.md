@@ -11,7 +11,5 @@ Mesh directory: meshes/
 
 All uploaded OBJ meshes were checked for zero OBJ line-element records.
 
-The URDF is a reference for conversion and is not imported
-directly into SimArena.
 
 [**Load Bandiit in SimArena**](https://app.simarena.ai/editor?scene=https%3A%2F%2Fraw.githubusercontent.com%2Fbanditteam%2Fbandit-simarena-integration%2Fmain%2Fsimarena%2Frobotics%2Fbandit.physics.scene.json)
